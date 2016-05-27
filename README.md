@@ -1,5 +1,5 @@
 # delta-v
-`delta-v` is a program to calculate Delta-V (*ΔV*). Made specifically for Kerbal Space Program, but may be used for other purposes.
+`delta-v` is a program to calculate [Delta-V](https://en.wikipedia.org/wiki/Delta-v) (*ΔV*). Made specifically for [Kerbal Space Program](https://en.wikipedia.org/wiki/Kerbal_Space_Program), but may be used for other purposes.
 
 To use the program do the following:
 
