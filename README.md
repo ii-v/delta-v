@@ -11,3 +11,6 @@ To use the program do the following:
 
 If this for some reason doesn't work for you, compile manually with `gcc -o delta-v delta-v.c -lm` and run with `./delta-v`
 The program has only been tested on Ubuntu 16.04, but should work on other systems.
+
+## license
+`delta-v` is made public under the zlib/libpng License, the full license can be read at https://opensource.org/licenses/Zlib or in the LICENSE file in this directory.
