@@ -11,6 +11,8 @@ rocket_equation(float total_mass, float dry_mass, float sp_impulse)
     delta_v = sp_impulse * g * log(total_mass / dry_mass);
     
     printf("The ΔV of the vehicle is %0.2f meters/second.\n", delta_v);
+    
+    return 0;
 }
 
 int
