@@ -22,7 +22,7 @@ main()
 
     printf("Write the total mass of the vehicle: ");
     scanf("%f", &total_mass);
-    if (total_mass  
+ 
     printf("Write the mass of the vehicle without fuel: ");
     scanf("%f", &dry_mass);
 
