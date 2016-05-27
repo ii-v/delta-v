@@ -6,8 +6,9 @@ rocket_equation(float total_mass, float dry_mass, float sp_impulse)
 /* Using the Tsiolkovsky rocket equation */
 {
     float delta_v;
- 
-    delta_v = sp_impulse * 9.82 * log(total_mass / dry_mass);
+    float g = 9.81; /* Gravitational Constant */
+
+    delta_v = sp_impulse * g * log(total_mass / dry_mass);
     
     printf("The ΔV of the vehicle is %0.2f meters/second.\n", delta_v);
 }
