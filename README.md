@@ -16,13 +16,9 @@ If this for some reason doesn't work for you, compile manually with `gcc -o delt
 The program has only been tested on Ubuntu 16.04, but should work on other systems.
 
 ## usage
-When compiled, the program is very simple to use. Just run it, and answer the prompts. The current prompts are as follows:
+When compiled, the program is very simple to use. Just run it, and answer the prompts.
 
-  1. `Write the total mass of the vehicle: `
-  2. `Write the mass of the vehicle without fuel: `
-  3. `Write the vehicle's engines specific impulse in seconds: `
-
-If you are unsure what any of those mean, please consult Wikipedia or the KSP Wiki.
+If you are unsure what any of the prompts mean, please consult Wikipedia or the KSP Wiki.
 
 ## license
 `delta-v` is made public under the zlib/libpng License, the full license can be read at https://opensource.org/licenses/Zlib or in the `LICENSE.md` file in this directory.
