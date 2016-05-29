@@ -64,6 +64,12 @@ main()
         
         printf("The total Delta-V is %0.2f\n", total_dv);
     }
+
+    else
+    {
+        printf("Invalid input, please try again.\n");
+        main();
+    }
     
     return 0;
 }
