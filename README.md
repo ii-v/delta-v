@@ -6,10 +6,14 @@ It is currently under heavy development and many things will change in the near 
 ## compiling
 To run the program, do the following:
 
-  `git clone https://github.com/ii-v/delta-v.git`
-  `cd delta-v`
-  `make`
+  `git clone https://github.com/ii-v/delta-v.git
+  
+  cd delta-v
+  
+  make`
+  
   Run the program with `./delta-v`
+  
   Optional: Install the program with `sudo make install` and uninstall with `sudo make uninstall`
 
 If this for some reason doesn't work for you, compile manually with `gcc -o delta-v delta-v.c -lm` and run with `./delta-v`
