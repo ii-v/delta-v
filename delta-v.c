@@ -39,7 +39,7 @@ main()
      
         delta_v = rocket_equation(total_mass, dry_mass, sp_impulse);
         
-        printf("The total Delta-V is %0.2f.\n", delta_v);
+        printf("The total Delta-V is %0.2f\n", delta_v);
     }
 
     else if (num_stages > 1)
@@ -62,7 +62,7 @@ main()
             num_stages = num_stages - 1;
         }
         
-        printf("The total Delta-V is %0.2f.\n", total_dv);
+        printf("The total Delta-V is %0.2f\n", total_dv);
     }
     
     return 0;
