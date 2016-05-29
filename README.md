@@ -6,11 +6,9 @@ It is currently under heavy development and many things will change in the near 
 ## compiling
 To run the program, do the following:
 
-  `git clone https://github.com/ii-v/delta-v.git
-  
-  cd delta-v
-  
-  make`
+  > git clone https://github.com/ii-v/delta-v.git
+  > cd delta-v
+  > make
   
   Run the program with `./delta-v`
   
