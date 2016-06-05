@@ -21,8 +21,8 @@ $(TARGET): $(OBJECTS)
 	    $(CC) $(OBJECTS) -Wall $(LIBS) -o $@
 
 clean:
-	    -rm -f *.o
-		-rm -f $(TARGET)
+	-rm -f *.o
+	-rm -f $(TARGET)
 
 run: default
 	./$(TARGET)
