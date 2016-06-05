@@ -14,7 +14,7 @@ rocket_equation(float total_mass, float dry_mass, float sp_impulse)
 }
 
 int
-main()
+main(void)
 {
     float total_mass; /* The total mass of the vehicle including fuel. */
     float dry_mass; /* The mass of the vehicle without fuel. */
