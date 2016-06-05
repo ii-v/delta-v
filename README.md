@@ -21,4 +21,4 @@ When compiled, the program is very simple to use. Just run it, and answer the pr
 If you are unsure what any of the prompts mean, please consult Wikipedia or the KSP Wiki.
 
 ## license
-`delta-v` is made public under the zlib/libpng License, the full license can be read at https://opensource.org/licenses/Zlib or in the `LICENSE.md` file in this directory.
+`delta-v` is made public under the MIT License, the full license can be read in the `LICENSE` file in this directory.
