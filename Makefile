@@ -27,11 +27,11 @@ clean:
 run: default
 	./$(TARGET)
 
-install: delta-v
+install: $(TARGET)
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp $< $(DESTDIR)$(PREFIX)/bin/delta-v
+	cp $< $(DESTDIR)$(PREFIX)/bin/$(TARGET)
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/delta-v
+	rm -f $(DESTDIR)$(PREFIX)/bin/$(TARGET)
 
 
