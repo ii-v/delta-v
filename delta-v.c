@@ -1,19 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-
 float
 rocket_equation(float total_mass, float dry_mass, float sp_impulse)
 /* Using the Tsiolkovsky rocket equation */
 {
     float delta_v;
     float g = 9.81; /* Gravitational Constant */
-
     delta_v = sp_impulse * g * log(total_mass / dry_mass);
-          
     return delta_v;
 }
-
 int
 main(int number_of_arguments, char *list_of_args[])
 {
@@ -23,13 +19,14 @@ main(int number_of_arguments, char *list_of_args[])
     int num_stages; /* The amount of stages of the vehicle. */
     float delta_v;
     float total_dv = 0;
-    
     if (number_of_arguments == 2)
+    {
         num_stages = atoi(list_of_args[1]);
-
+    }
     else
-        printf("One argument expected.\n");
-
+    {
+        printf("One argument expected.\nNumber of stages defaults to 1.\nPress Ctrl+C to abort.\n");
+    }
     if (num_stages == 1)
     {
         printf("Write the total mass of the vehicle: ");
@@ -45,29 +42,23 @@ main(int number_of_arguments, char *list_of_args[])
         
         printf("The total Delta-V is %0.2f\n", delta_v);
     }
-
     else if (num_stages > 1)
     {     
-        while (num_stages > 0)
+        for (int i = num_stages; i > 0; i--)
         {
-
-            printf("Write the total mass of stage %i: ", num_stages);
+            printf("Write the total mass of stage %i: ", i);
             scanf("%f", &total_mass);
          
-            printf("Write the mass of stage %i without fuel: ", num_stages);
+            printf("Write the mass of stage %i without fuel: ", i);
             scanf("%f", &dry_mass);
 
-            printf("Write stage %i engine's specific impulse in seconds: ", num_stages);
+            printf("Write stage %i engine's specific impulse in seconds: ", i);
             scanf("%f", &sp_impulse);
          
             delta_v = rocket_equation(total_mass, dry_mass, sp_impulse);
-            total_dv = total_dv + delta_v;
-            
-            num_stages = num_stages - 1;
+            total_dv = total_dv + delta_v;     
         }
-        
         printf("The total Delta-V is %0.2f\n", total_dv);
     }
-
     return 0;
 }
