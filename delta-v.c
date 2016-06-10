@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 float
 rocket_equation(float total_mass, float dry_mass, float sp_impulse)
@@ -14,7 +15,7 @@ rocket_equation(float total_mass, float dry_mass, float sp_impulse)
 }
 
 int
-main(void)
+main(int number_of_arguments, char *list_of_args[])
 {
     float total_mass; /* The total mass of the vehicle including fuel. */
     float dry_mass; /* The mass of the vehicle without fuel. */
@@ -22,10 +23,13 @@ main(void)
     int num_stages; /* The amount of stages of the vehicle. */
     float delta_v;
     float total_dv = 0;
-
-    printf("How many stages does your vehicle have? ");
-    scanf("%i", &num_stages);
     
+    if (number_of_arguments == 2)
+        num_stages = atoi(list_of_args[1]);
+
+    else
+        printf("One argument expected.\n");
+
     if (num_stages == 1)
     {
         printf("Write the total mass of the vehicle: ");
@@ -65,11 +69,5 @@ main(void)
         printf("The total Delta-V is %0.2f\n", total_dv);
     }
 
-    else
-    {
-        printf("Invalid input, please try again.\n");
-        main();
-    }
-    
     return 0;
 }
