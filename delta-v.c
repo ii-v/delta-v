@@ -19,10 +19,10 @@ main(int number_of_arguments, char *list_of_args[])
     float total_mass; /* The total mass of the vehicle including fuel. */
     float dry_mass; /* The mass of the vehicle without fuel. */
     float sp_impulse; /* The specific impulse of the engine. (Fuel effiency) */
-    int num_stages; /* The amount of stages of the vehicle. */
+    int num_stages = 0;
     float delta_v;
     float total_dv = 0;
-    
+
     if (number_of_arguments == 2)
     {
         num_stages = atoi(list_of_args[1]);
