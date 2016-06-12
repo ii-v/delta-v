@@ -51,21 +51,20 @@ main(int argc, char *argv[])
     
     else if (num_stages > 1)
     {     
-        while (num_stages > 0)
+        for (int i = num_stages; i > 0; i--)
         {
-            printf("Write the total mass of stage %i: ", num_stages);
+            printf("Write the total mass of stage %i: ", i);
             scanf("%f", &total_mass);
          
-            printf("Write the mass of stage %i without fuel: ", num_stages);
+            printf("Write the mass of stage %i without fuel: ", i);
             scanf("%f", &dry_mass);
 
-            printf("Write stage %i engine's specific impulse in seconds: ", num_stages);
+            printf("Write stage %i engine's specific impulse in seconds: ", i);
             scanf("%f", &sp_impulse);
          
             delta_v = rocket_equation(total_mass, dry_mass, sp_impulse);
             total_dv = total_dv + delta_v;     
             
-            num_stages--;
         }
     
         printf("The total Delta-V is %0.2f\n", total_dv);
