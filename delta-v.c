@@ -14,7 +14,7 @@ rocket_equation(float total_mass, float dry_mass, float sp_impulse)
 }
 
 int
-main(int number_of_arguments, char *list_of_args[])
+main(int argc, char *argv[])
 {
     float total_mass; /* The total mass of the vehicle including fuel. */
     float dry_mass; /* The mass of the vehicle without fuel. */
@@ -23,9 +23,9 @@ main(int number_of_arguments, char *list_of_args[])
     float delta_v;
     float total_dv = 0;
 
-    if (number_of_arguments == 2)
+    if (argc == 2)
     {
-        num_stages = atoi(list_of_args[1]);
+        num_stages = atoi(argv[1]);
     }
     
     else
