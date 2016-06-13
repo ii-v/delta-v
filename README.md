@@ -9,14 +9,15 @@ To run the program, do the following:
   1. `git clone https://github.com/ii-v/delta-v.git`
   2. `cd delta-v`
   3. `make`
-  4. Run the program with `./delta-v`
+  4. Run the program with `./delta-v [number of stages]`
   5. Optional: Install the program with `sudo make install` and uninstall with `sudo make uninstall`
 
 If this for some reason doesn't work for you, compile manually with `gcc -o delta-v delta-v.c -lm` and run with `./delta-v`
 The program has only been tested on Ubuntu 16.04, but should work on other systems.
 
 ## Usage
-When compiled, the program is very simple to use. Just run it, and answer the prompts.
+When compiled, the program is very simple to use.
+Run the program with `./delta-v [number of stages]` and follow the prompts.
 
 If you are unsure what any of the prompts mean, please consult Wikipedia or the KSP Wiki.
 
