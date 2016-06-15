@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
+#include <math.h>
 
 float
-rocket_equation(float total_mass, float dry_mass, float sp_impulse)
+rocket_equation
+(float total_mass, float dry_mass, float sp_impulse)
 /* Using the Tsiolkovsky rocket equation */
 {
     float delta_v;
@@ -14,7 +15,8 @@ rocket_equation(float total_mass, float dry_mass, float sp_impulse)
 }
 
 int
-main(int argc, char *argv[])
+main
+(int argc, char *argv[])
 {
     float total_mass; /* The total mass of the vehicle including fuel. */
     float dry_mass; /* The mass of the vehicle without fuel. */
@@ -30,7 +32,7 @@ main(int argc, char *argv[])
     
     else
     {
-        printf("Usage: delta-v [number of stages]\n");
+        printf("Usage:\n  delta-v [number of stages]\n");
     }
     
     if (num_stages == 1)
